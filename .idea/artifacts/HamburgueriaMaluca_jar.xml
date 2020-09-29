@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HamburgueriaMaluca:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HamburgueriaMaluca_jar</output-path>
+    <root id="archive" name="HamburgueriaMaluca.jar">
+      <element id="module-output" name="HamburgueriaMaluca" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/netgames/ngnrtFramework.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/netgames/NetGamesFileOffline.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

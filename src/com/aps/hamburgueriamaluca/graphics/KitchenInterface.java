@@ -1,10 +1,19 @@
 package com.aps.hamburgueriamaluca.graphics;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 public class KitchenInterface extends JFrame {
+
+    public static String pathImageForBoard = "/home/gustavo/Documentos/HamburgueriaMaluca/src/resources/boardNew.png";
+    public static int WIDTH, HEIGHT;
+
+    private static JLabel[][] vPosicoes;
 
     protected AtorJogador jogo;
 
@@ -82,13 +91,68 @@ public class KitchenInterface extends JFrame {
     private void initialize() {
         this.setSize(1200, 800);
         this.setContentPane(getJContentPane());
-        this.setLocation(200,100);
-        this.setTitle("Ufsc - CarneFrangoeQueijon");
+        this.setLocation(300,200);
+        this.setTitle("Ufsc - Hamburgueria Maluca");
         this.setResizable(false);
         jogo = new AtorJogador(this);
     }
 
     private JPanel getJContentPane() {
+        Icon vazia = new ImageIcon(getClass().getResource("vazio.gif"));
+        Icon cheese = new ImageIcon(getClass().getResource("cheese.gif"));
+        Icon meat = new ImageIcon(getClass().getResource("meat.gif"));
+        Icon chicken = new ImageIcon(getClass().getResource("chicken.gif"));
+        Icon tomato = new ImageIcon(getClass().getResource("tomato.gif"));
+        Icon letuce = new ImageIcon(getClass().getResource("letuce.gif"));
+        try {
+            BufferedImage bufferedImage = ImageIO.read(new File(pathImageForBoard));
+            WIDTH = bufferedImage.getWidth();
+            HEIGHT = bufferedImage.getHeight();
+            jContentPane = new JPanel();
+            jContentPane.setLayout(null);
+            int[]pixels = new int[WIDTH * HEIGHT];
+            vPosicoes = new JLabel[WIDTH][HEIGHT];
+            bufferedImage.getRGB(0,0, bufferedImage.getWidth(), bufferedImage.getHeight(), pixels, 0, bufferedImage.getWidth());
+            for (int i = 0; i < bufferedImage.getWidth(); i++){
+                for (int j = 0; j < bufferedImage.getHeight(); j++) {
+                    int pixelToAnalyze = pixels[i + (j * bufferedImage.getWidth())];
+                    if(pixelToAnalyze == -61952) {
+                        JLabel jLabel = new JLabel();
+                        jLabel.setBounds(new Rectangle(20 + (i *70),600 - (70 *j),70,70));
+                        jLabel.setIcon(vazia);
+                        jContentPane.add(jLabel,null);
+                        mapaVPosicao[i][j] = jLabel;
+//                        vPosicoes[i][j] = jLabel;
+                    } else if (pixelToAnalyze == -65282) {
+                        JLabel jLabel = new JLabel();
+                        jLabel.setBounds(new Rectangle(20 + (i *70),600 - (70 *j),70,70));
+                        jLabel.setIcon(cheese);
+                        jContentPane.add(jLabel,null);
+                        mapaVPosicao[i][j] = jLabel;
+                    } else if (pixelToAnalyze == -16121736) {
+                        JLabel jLabel = new JLabel();
+                        jLabel.setBounds(new Rectangle(20 + (i *70),600 - (70 *j),70,70));
+                        jLabel.setIcon(meat);
+                        jContentPane.add(jLabel,null);
+                        mapaVPosicao[i][j] = jLabel;
+                    } else if (pixelToAnalyze == -327928) {
+                        JLabel jLabel = new JLabel();
+                        jLabel.setBounds(new Rectangle(20 + (i *70),600 - (70 *j),70,70));
+                        jLabel.setIcon(tomato);
+                        jContentPane.add(jLabel,null);
+                        mapaVPosicao[i][j] = jLabel;
+                    }
+
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return jContentPane;
+
+    }
+
+    private JPanel getJContentPane2() {
         if(jContentPane == null) {
 
             Icon vazia = new ImageIcon(getClass().getResource("vazio.gif"));
@@ -164,122 +228,21 @@ public class KitchenInterface extends JFrame {
             vPosicao12 = new JLabel();
             vPosicao12.setBounds(new Rectangle(90,600,70,70));
             vPosicao12.setIcon(meat);
-            vPosicao12.addKeyListener(
-                    new java.awt.event.KeyListener() {
-                        @Override
-                        public void keyTyped(KeyEvent e) {
-
-                        }
-                        @Override
-                        public void keyPressed(KeyEvent e) {
-                            if (e.getKeyCode() == KeyEvent.VK_W) {
-                                System.out.println("W");
-                            } else {
-                                System.out.println("não é w");
-                            }
-                        }
-                        @Override
-                        public void keyReleased(KeyEvent e) {
-
-                        }
-                    }
-            );
-
             vPosicao13 = new JLabel();
             vPosicao13.setBounds(new Rectangle(160,600,70,70));
             vPosicao13.setIcon(chicken);
-            vPosicao13.addKeyListener(
-                    new java.awt.event.KeyListener() {
-                        @Override
-                        public void keyTyped(KeyEvent e) {
-
-                        }
-                        @Override
-                        public void keyPressed(KeyEvent e) {
-                            if (e.getKeyCode() == KeyEvent.VK_E  ) {
-                                System.out.println("E");
-                            } else {
-                                System.out.println("não é e");
-                            }
-                        }
-                        @Override
-                        public void keyReleased(KeyEvent e) {
-
-                        }
-                    }
-            );
 
             vPosicao14 = new JLabel();
             vPosicao14.setBounds(new Rectangle(230,600,70,70));
             vPosicao14.setIcon(tomato);
-            vPosicao14.addKeyListener(
-                    new java.awt.event.KeyListener() {
-                        @Override
-                        public void keyTyped(KeyEvent e) {
-
-                        }
-                        @Override
-                        public void keyPressed(KeyEvent e) {
-                            if (e.getKeyCode() == KeyEvent.VK_R  ) {
-                                System.out.println("R");
-                            } else {
-                                System.out.println("não é r");
-                            }
-                        }
-                        @Override
-                        public void keyReleased(KeyEvent e) {
-
-                        }
-                    }
-            );
 
             vPosicao15 = new JLabel();
             vPosicao15.setBounds(new Rectangle(300,600,70,70));
             vPosicao15.setIcon(letuce);
-            vPosicao15.addKeyListener(
-                    new java.awt.event.KeyListener() {
-                        @Override
-                        public void keyTyped(KeyEvent e) {
-
-                        }
-                        @Override
-                        public void keyPressed(KeyEvent e) {
-                            if (e.getKeyCode() == KeyEvent.VK_T  ) {
-                                System.out.println("T");
-                            } else {
-                                System.out.println("não é t");
-                            }
-                        }
-                        @Override
-                        public void keyReleased(KeyEvent e) {
-
-                        }
-                    }
-            );
 
             vPosicao16 = new JLabel();
             vPosicao16.setBounds(new Rectangle(370,600,70,70));
             vPosicao16.setIcon(ok);
-            vPosicao16.addKeyListener(
-                    new java.awt.event.KeyListener() {
-                        @Override
-                        public void keyTyped(KeyEvent e) {
-
-                        }
-                        @Override
-                        public void keyPressed(KeyEvent e) {
-                            if (e.getKeyCode() == KeyEvent.VK_ENTER  ) {
-                                System.out.println("ENTER");
-                            } else {
-                                System.out.println("NÃO É ENTER");
-                            }
-                        }
-                        @Override
-                        public void keyReleased(KeyEvent e) {
-
-                        }
-                    }
-            );
 
             vPosicao17 = new JLabel();
             vPosicao17.setBounds(new Rectangle(500,310,500,360));
