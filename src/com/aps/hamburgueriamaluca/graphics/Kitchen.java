@@ -2,11 +2,11 @@ package com.aps.hamburgueriamaluca.graphics;
 
 import javax.swing.*;
 
-public class Cozinha {
+public class Kitchen {
 
     public static void main(String[] args) {
-        InterfaceCozinha janela;
-        janela = new InterfaceCozinha();
+        KitchenInterface janela;
+        janela = new KitchenInterface();
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         janela.setVisible(true);
     }

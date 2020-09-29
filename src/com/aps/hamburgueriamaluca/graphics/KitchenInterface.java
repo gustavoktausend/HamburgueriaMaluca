@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
-public class InterfaceCozinha extends JFrame {
+public class KitchenInterface extends JFrame {
 
     protected AtorJogador jogo;
 
@@ -59,22 +59,22 @@ public class InterfaceCozinha extends JFrame {
 
 
 
-    public InterfaceCozinha() throws HeadlessException {
+    public KitchenInterface() throws HeadlessException {
         super();
         initialize();
     }
 
-    public InterfaceCozinha(GraphicsConfiguration arg0) {
+    public KitchenInterface(GraphicsConfiguration arg0) {
         super(arg0);
         initialize();
     }
 
-    public InterfaceCozinha(String arg0) throws HeadlessException {
+    public KitchenInterface(String arg0) throws HeadlessException {
         super(arg0);
         initialize();
     }
 
-    public InterfaceCozinha(String arg0, GraphicsConfiguration arg1) {
+    public KitchenInterface(String arg0, GraphicsConfiguration arg1) {
         super(arg0, arg1);
         initialize();
     }

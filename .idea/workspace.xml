@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc2775e0-09a8-4792-a9c3-c026d5ee90ac" name="Default Changelist" comment="" />
+    <list default="true" id="fc2775e0-09a8-4792-a9c3-c026d5ee90ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/model/CheeseBurguer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/model/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/model/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/network/AtorNetGames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamburgueriaMaluca.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HamburgueriaMaluca.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/graphics/AtorJogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/graphics/AtorJogador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/graphics/Cozinha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/graphics/Kitchen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/graphics/InterfaceCozinha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/graphics/KitchenInterface.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +34,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/netgames" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -44,6 +61,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -56,10 +78,42 @@
       <option name="presentableId" value="Default" />
       <updated>1601337094066</updated>
       <workItem from="1601337097025" duration="2028000" />
+      <workItem from="1601339218115" duration="868000" />
+      <workItem from="1601340224960" duration="1327000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="228" y="322" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601340083419">
+      <screen x="0" y="180" width="1600" height="900" />
+    </state>
+    <state x="228" y="322" key="#com.intellij.execution.impl.EditConfigurationsDialog/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601340083419" />
+    <state x="377" y="310" key="FileChooserDialogImpl" timestamp="1601340601366">
+      <screen x="0" y="180" width="1600" height="900" />
+    </state>
+    <state x="377" y="310" key="FileChooserDialogImpl/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601340601366" />
+    <state width="1554" height="217" key="GridCell.Tab.0.bottom" timestamp="1601340088670">
+      <screen x="0" y="180" width="1600" height="900" />
+    </state>
+    <state width="1554" height="217" key="GridCell.Tab.0.bottom/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601340088670" />
+    <state width="1554" height="217" key="GridCell.Tab.0.center" timestamp="1601340088670">
+      <screen x="0" y="180" width="1600" height="900" />
+    </state>
+    <state width="1554" height="217" key="GridCell.Tab.0.center/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601340088670" />
+    <state width="1554" height="217" key="GridCell.Tab.0.left" timestamp="1601340088670">
+      <screen x="0" y="180" width="1600" height="900" />
+    </state>
+    <state width="1554" height="217" key="GridCell.Tab.0.left/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601340088670" />
+    <state width="1554" height="217" key="GridCell.Tab.0.right" timestamp="1601340088670">
+      <screen x="0" y="180" width="1600" height="900" />
+    </state>
+    <state width="1554" height="217" key="GridCell.Tab.0.right/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601340088670" />
+    <state x="214" y="200" width="1275" height="745" key="SettingsEditor" timestamp="1601340629609">
+      <screen x="0" y="180" width="1600" height="900" />
+    </state>
+    <state x="214" y="200" width="1275" height="745" key="SettingsEditor/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601340629609" />
   </component>
 </project>

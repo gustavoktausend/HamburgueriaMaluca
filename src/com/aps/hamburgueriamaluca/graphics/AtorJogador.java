@@ -1,20 +1,20 @@
 package com.aps.hamburgueriamaluca.graphics;
 
-import br.com.aps.carnegrangoequeijon.negocio.Mesa;
-import br.com.aps.carnegrangoequeijon.rede.AtorNetGames;
+import com.aps.hamburgueriamaluca.model.Table;
+import com.aps.hamburgueriamaluca.network.AtorNetGames;
 
 public class AtorJogador {
 
-    protected Mesa mesa;
+    protected Table table;
     protected AtorNetGames rede;
-    protected InterfaceCozinha janela;
+    protected KitchenInterface janela;
     protected String idUsuario;
 
-    public AtorJogador (InterfaceCozinha jan){
+    public AtorJogador (KitchenInterface jan){
         super();
         rede = new AtorNetGames(this);
         janela = jan;
-        mesa = new Mesa();
+        table = new Table();
 //        mesa.iniciar();
     }
 
@@ -34,7 +34,7 @@ public class AtorJogador {
 //        }
 //    }
 
-    public InterfaceCozinha informarJanela() {
+    public KitchenInterface informarJanela() {
         return janela;
     }
 //
