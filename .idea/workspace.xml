@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc2775e0-09a8-4792-a9c3-c026d5ee90ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/resources/boardNew.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/graphics/AtorJogador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/graphics/AtorJogador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/graphics/Cozinha.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/graphics/InterfaceCozinha$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/graphics/InterfaceCozinha$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/graphics/InterfaceCozinha$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/graphics/InterfaceCozinha$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/graphics/InterfaceCozinha$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/graphics/InterfaceCozinha$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/graphics/InterfaceCozinha.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/network/AtorNetGames.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HamburgueriaMaluca/com/aps/hamburgueriamaluca/network/AtorNetGames.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/graphics/KitchenInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aps/hamburgueriamaluca/graphics/KitchenInterface.java" afterDir="false" />
-    </list>
+    <list default="true" id="fc2775e0-09a8-4792-a9c3-c026d5ee90ac" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +35,9 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/out/production" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.aps.hamburgueriamaluca.network" />
     </key>
@@ -90,7 +77,7 @@
       <workItem from="1601337097025" duration="2028000" />
       <workItem from="1601339218115" duration="868000" />
       <workItem from="1601340224960" duration="2088000" />
-      <workItem from="1601342333336" duration="5775000" />
+      <workItem from="1601342333336" duration="5944000" />
     </task>
     <servers />
   </component>
@@ -118,22 +105,22 @@
       <screen x="0" y="180" width="1600" height="900" />
     </state>
     <state x="377" y="310" key="FileChooserDialogImpl/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601340601366" />
-    <state width="1554" height="217" key="GridCell.Tab.0.bottom" timestamp="1601347791292">
+    <state width="1554" height="217" key="GridCell.Tab.0.bottom" timestamp="1601348179945">
       <screen x="0" y="180" width="1600" height="900" />
     </state>
-    <state width="1554" height="217" key="GridCell.Tab.0.bottom/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601347791292" />
-    <state width="1554" height="217" key="GridCell.Tab.0.center" timestamp="1601347791292">
+    <state width="1554" height="217" key="GridCell.Tab.0.bottom/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601348179945" />
+    <state width="1554" height="217" key="GridCell.Tab.0.center" timestamp="1601348179945">
       <screen x="0" y="180" width="1600" height="900" />
     </state>
-    <state width="1554" height="217" key="GridCell.Tab.0.center/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601347791292" />
-    <state width="1554" height="217" key="GridCell.Tab.0.left" timestamp="1601347791292">
+    <state width="1554" height="217" key="GridCell.Tab.0.center/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601348179945" />
+    <state width="1554" height="217" key="GridCell.Tab.0.left" timestamp="1601348179945">
       <screen x="0" y="180" width="1600" height="900" />
     </state>
-    <state width="1554" height="217" key="GridCell.Tab.0.left/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601347791292" />
-    <state width="1554" height="217" key="GridCell.Tab.0.right" timestamp="1601347791292">
+    <state width="1554" height="217" key="GridCell.Tab.0.left/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601348179945" />
+    <state width="1554" height="217" key="GridCell.Tab.0.right" timestamp="1601348179945">
       <screen x="0" y="180" width="1600" height="900" />
     </state>
-    <state width="1554" height="217" key="GridCell.Tab.0.right/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601347791292" />
+    <state width="1554" height="217" key="GridCell.Tab.0.right/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601348179945" />
     <state width="1554" height="269" key="GridCell.Tab.1.bottom" timestamp="1601347775401">
       <screen x="0" y="180" width="1600" height="900" />
     </state>
@@ -150,10 +137,10 @@
       <screen x="0" y="180" width="1600" height="900" />
     </state>
     <state width="1554" height="269" key="GridCell.Tab.1.right/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601347775401" />
-    <state x="214" y="200" width="1275" height="745" key="SettingsEditor" timestamp="1601348174438">
+    <state x="214" y="200" width="1275" height="745" key="SettingsEditor" timestamp="1601348343411">
       <screen x="0" y="180" width="1600" height="900" />
     </state>
-    <state x="214" y="200" width="1275" height="745" key="SettingsEditor/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601348174438" />
+    <state x="214" y="200" width="1275" height="745" key="SettingsEditor/1600.0.1920.1080/0.180.1600.900@0.180.1600.900" timestamp="1601348343411" />
     <state x="1889" y="0" width="1134" height="611" maximized="true" key="dock-window-1" timestamp="1601347252611">
       <screen x="1600" y="0" width="1920" height="1080" />
     </state>
